@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                 </ul>
             </div>
             <div class="header-content">
-                <div class="header-container">
+                <div class="header-content-container">
                     <div class="text-container">
                         <div class="text">
                             <h2>This website is awesome</h2>
@@ -33,32 +33,60 @@
         </div>
     </div>
     <div class="content">
-        <h3>Some random information.</h3>
-        <div class="content-items">
-            <p>This is some subtext under an illustration or image.</p>
-            <p>This is some subtext under an illustration or image.</p>
-            <p>This is some subtext under an illustration or image.</p>
-            <p>This is some subtext under an illustration or image.</p>
+        <div class="main-text">
+            <h3>Some random information.</h3>
+        </div>
+        <div class="content-box-wrapper">
+            <div class="content-box">
+                <div class="content-items">
+                    <div class="image-box"></div>
+                    <div class="text">This is some subtext under an illustration or image.</div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-items">
+                    <div class="image-box"></div>
+                    <div class="text">This is some subtext under an illustration or image.</div>
+                </div>
+            </div>
+
+            <div class="content-box">
+                <div class="content-items">
+                    <div class="image-box"></div>
+                    <div class="text">This is some subtext under an illustration or image.</div>
+                </div>
+            </div>
+            
+            <div class="content-box">
+                <div class="content-items">
+                    <div class="image-box"></div>
+                    <div class="text">This is some subtext under an illustration or image.</div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="quote-container">
-        <div class="quote">
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p><strong>-Thor, God of Thunder</strong></p>
+        <div class="quote-content">
+            <p id="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+            <p id="quote-author"><strong>-Thor, God of Thunder</strong></p>
         </div>
     </div>
 
-    <div class="signup">
-        <h4><strong>Call to action! It's time!</strong></h4>
-        <p>Sign up for our product by clicking that button right over there!</p>
-        <button type="button">Sign up</button>
+    <div class="signup-container">
+        <div class="signup-content">
+        <div class="signup-text">
+            <h4><strong>Call to action! It's time!</strong></h4>
+            <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+            <div class="sign-up-button">
+                <button id="sign-up-b" type="button">Sign up</button>
+            </div>
+        </div>
     </div>
-
     <footer class="footer">
-        <p>Copyright The Odin Project 2021</p>
+        <p id="footer-content">Copyright © The Odin Project 2021</p>
     </footer>
-
 </body>
-
 </html>
