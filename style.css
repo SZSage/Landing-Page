@@ -33,6 +33,7 @@ ul {
 h2 {
     font-size: 48px;
     color: #F9FAF8;
+    margin: 0;
 }
 h2 {
     margin-bottom: 0;
@@ -43,8 +44,8 @@ h3 {
     color: #1f2937;
 }
 
-h4 {
-    margin-bottom: 0;
+h2, h4, p, button {
+    margin: 0;  /* Remove default margins */
 }
 
 .header {
@@ -79,28 +80,59 @@ h4 {
 
 .header-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 300px;
-    padding-top: 60px;
     margin-right: 300px;
-    border: 2px solid green;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .header-content-container {
     display: flex;
-    flex: 1;
     justify-content: space-between;
-    border: 2px solid green;
 }
 
 .text-container {
-    border: 2px solid yellow;
-    flex: 1;
+    display: flex;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text,
+h2,
+p {
+    flex: 0 1 80%;
+}
+
+.image {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    background-color: grey;
+}
+
+.image,
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-signup-button {
+    display: flex;
+    align-items: flex-end;
 }
 
 button {
     width: 80px;
     height: 26px;
     background-color: #3882F6;
+    border-radius: 8px;
+    color: #F9FAF8;
 }
 
 
@@ -141,7 +173,7 @@ button {
     display: flex;
     background-color: #E5E7EB;
     justify-content: center;
-    padding: 50px;
+    padding: 40px;
 }
 
 .quote-content {
@@ -164,15 +196,20 @@ button {
 .signup-container {
     display: flex;
     justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .signup-content {
     display: flex;
     flex: 1;
+    height: 60px;
+    align-items: center;
     justify-content: space-around;
     flex-direction: row;
     background-color: #3882F6;
-    margin: 100px 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: #F9FAF8;
     border-radius: 10px;
     padding: 20px;
@@ -199,5 +236,5 @@ button {
     background-color: #1F2937;
     color: #F9FAF8;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
